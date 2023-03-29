@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 600px;
+    background-color: #eee;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.header {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.banner img { 
+    display: block;
+    position: fixed;
+    top: -710px;
+    left: 0;
+    clip: rect(710px 1500px 790px 0);
+    border-bottom: 1px solid lightblue;
+}
+
+.header h1 {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #FF8B13;
+    text-align: center;
+    border-bottom: 1px solid #FF8B13;
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding-bottom: 50px;
+    
+    /* shadow */
+    box-shadow: 5px 0 5px #ddd, -5px 0 5px #ddd;
+}
+
+.list {
+    width: 75%;
+    margin: 80px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    flex: 1 1 auto;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+
+    /* border: 1px solid #F2CD5C; */
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 3px 3px 3px #eee, -3px -3px 3px #eee;
+}
+
+a:visited,
+a {
+    color: #FC7300;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: olivedrab;
+    font-size: 1.65rem;
+}
+
+.photo {
+   margin-top: 25px;
+}
+
+.photo img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.description,
+.ingredients,
+.steps {
+    width: 75%;
+    margin: 25px auto;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style-type: '⦿ ';
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight:lighter;
+    margin: 15px 0;
+}
