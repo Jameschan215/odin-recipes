@@ -5,9 +5,39 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     background-color: #eee;
     font-family:'Courier New', Courier, monospace;
+}
+
+.content {
+    position: relative;
+    width: 800px;
+
+    padding-top: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding-bottom: 150px;
+    
+    /* shadow */
+    box-shadow: 5px 0 5px #ddd, -5px 0 5px #ddd;
+}
+
+.banner {
+    position: fixed;
+    top: -430px;
+    width: 800px;
+    height: 513px;
+    box-shadow: 0 10px 10px #dddddd;
+}
+
+.banner img { 
+    display: block;
+    position: fixed;
+    top: -430px;
+    clip-path: inset(430px 0 20px 0);
+    width: 800px;
 }
 
 .header {
@@ -15,40 +45,18 @@ body {
     margin: 0 auto;
 }
 
-.banner img { 
-    display: block;
-    position: fixed;
-    top: -710px;
-    left: 0;
-    clip-path: inset(710px 0 160px 0);
-    width: 100%;
-    border-bottom: 1px solid lightblue;
-}
-
 .header h1 {
     margin: 0 auto;
     padding-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     
     font-size: 2rem;
-    font-weight: lighter;
-    color: #FF8B13;
+    font-weight: bolder;
+    color: #00473e;
     text-align: center;
-    border-bottom: 1px solid #FF8B13;
+    border-bottom: 1px solid #00473e;
 }
 
-.content {
-    width: 50%;
-    height: 100%;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    padding-bottom: 50px;
-    
-    /* shadow */
-    box-shadow: 5px 0 5px #ddd, -5px 0 5px #ddd;
-}
 
 .list {
     width: 75%;
@@ -68,26 +76,28 @@ body {
     text-align: center;
     padding: 20px;
 
+    background-color: #faae2b;
     /* border: 1px solid #F2CD5C; */
-    border-radius: 15px;
+    border-radius: 5px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    box-shadow: 3px 3px 3px #eee, -3px -3px 3px #eee;
+    box-shadow: 5px 5px 5px #eee, -5px -5px 5px #eee;
 }
 
 a:visited,
 a {
-    color: #FC7300;
+    color: #00473e;
     font-size: 1.6rem;
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:hover {
-    color: olivedrab;
+    color: #475d5b;
     font-size: 1.65rem;
 }
 
@@ -109,6 +119,7 @@ a:hover {
 }
 
 .content h2 {
+    color: #00473e;
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
@@ -124,6 +135,7 @@ ul li {
 }
 
 p {
+    color: #475d5b;
     font-size: 1.5rem;
     font-weight:lighter;
     margin: 15px 0;
