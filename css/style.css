@@ -5,7 +5,7 @@
 }
 
 body {
-    min-height: 600px;
+    min-height: 100vh;
     background-color: #eee;
     font-family:'Courier New', Courier, monospace;
 }
@@ -20,7 +20,8 @@ body {
     position: fixed;
     top: -710px;
     left: 0;
-    clip: rect(710px 1500px 790px 0);
+    clip-path: inset(710px 0 160px 0);
+    width: 100%;
     border-bottom: 1px solid lightblue;
 }
 
